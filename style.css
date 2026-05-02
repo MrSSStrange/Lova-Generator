@@ -119,7 +119,7 @@ h1 {
         padding: 24px;
         background:
             linear-gradient(180deg, rgba(20, 7, 18, 0.18), rgba(20, 7, 18, 0.9)),
-            url(love.png) center/cover no-repeat;
+            url("./love.png') center/cover no-repeat;
     }
 
     .content {
