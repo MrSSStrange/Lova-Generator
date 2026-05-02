@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background: #140712;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 48px;
+    background:
+        linear-gradient(90deg, rgba(20, 7, 18, 0.9), rgba(20, 7, 18, 0.55), rgba(20, 7, 18, 0.2)),
+        url(love.png) center/cover no-repeat;
+}
+
+.content {
+    width: min(520px, 100%);
+    padding: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+}
+
+.label {
+    margin: 0 0 16px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #ffd0dc;
+}
+
+h1 {
+    margin: 0;
+    font-size: 54px;
+    line-height: 1;
+}
+
+.text {
+    margin: 22px 0 0;
+    max-width: 440px;
+    font-size: 18px;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.name-one,
+.name-two {
+    width: 100%;
+    height: 52px;
+    margin-top: 16px;
+    padding: 0 18px;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 8px;
+    outline: none;
+    font-size: 17px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.14);
+    transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.name-one::placeholder,
+.name-two::placeholder {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.name-one:focus,
+.name-two:focus {
+    border-color: #ffd0dc;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 4px rgba(255, 208, 220, 0.18);
+}
+
+.button {
+    width: 100%;
+    height: 54px;
+    margin-top: 18px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3d1025;
+    background: linear-gradient(135deg, #ffd0dc, #ffffff);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.34);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+.result {
+    min-height: 32px;
+    margin: 22px 0 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.45;
+    color: #ffffff;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        align-items: flex-end;
+        padding: 24px;
+        background:
+            linear-gradient(180deg, rgba(20, 7, 18, 0.18), rgba(20, 7, 18, 0.9)),
+            url(love.png) center/cover no-repeat;
+    }
+
+    .content {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .name-one,
+    .name-two,
+    .button {
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .result {
+        font-size: 18px;
+    }
+}
