@@ -19,6 +19,14 @@ body {
         linear-gradient(90deg, rgba(20, 7, 18, 0.9), rgba(20, 7, 18, 0.55), rgba(20, 7, 18, 0.2)),
         url(love.png) center/cover no-repeat;
 }
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .content {
     width: min(520px, 100%);
